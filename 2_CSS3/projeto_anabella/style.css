@@ -1,0 +1,41 @@
+body{
+	background: url('./imgs/fundo.png') repeat;
+	font-family: Arial;
+}
+
+#content{
+	width: 900px;
+}
+
+header{
+	background: grey;
+}
+
+nav{
+	padding: 1.5em;
+}
+
+nav span a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.5em; 
+}
+
+main{
+	background: yellow;
+	padding: 1em;
+	text-align: justify;
+}
+
+main h3{
+	color: brown;
+}
+
+footer{
+	text-align: center;
+	font-weight: bold;
+}
+
+main img{
+	border: 12px solid pink;
+}
