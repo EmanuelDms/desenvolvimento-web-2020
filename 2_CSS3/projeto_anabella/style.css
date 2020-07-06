@@ -1,41 +1,52 @@
 body{
-	background: url('./imgs/fundo.png') repeat;
-	font-family: Arial;
+	background: #d2d2c1 url('./imgs/fundo.png') repeat fixed;
+	font-family: 16px Arial, Helvetica, sans-serif;
 }
 
 #content{
 	width: 900px;
 }
 
-header{
-	background: grey;
-}
+/* Header */
 
 nav{
-	padding: 1.5em;
+	background: #c5c5b2;
+	padding: 1.14em;
 }
 
-nav span a{
+nav a{
 	text-decoration: none;
-	color: black;
-	font-size: 1.5em; 
+	color: #4b556a;
+	font-size: 1.25em; 
+	font-weight: bold;
+	padding: 0.25em;
 }
+
+/* Main Content */
 
 main{
-	background: yellow;
-	padding: 1em;
+	background: #e8e8d9;
+	padding: 0.8em;
 	text-align: justify;
 }
 
-main h3{
-	color: brown;
+h1{
+	color: #828282;
+	font-size: 1.2em;
 }
+
+main img{
+	border: 10px solid #c3c3ae;
+}
+
+.contacts{
+	font-weight: 700;
+}
+
+/* Footer */
 
 footer{
 	text-align: center;
 	font-weight: bold;
 }
 
-main img{
-	border: 12px solid pink;
-}
