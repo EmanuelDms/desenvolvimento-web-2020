@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Elements</title>
+    <style>
+        main{
+            border: 5px solid red;
+            background: yellowgreen;
+        }
+        .content{
+            background: purple;
+            padding: 10px;
+            margin: 10px;
+            float: right;
+        }
+        .content-1{
+            background: yellow;
+            padding: 10px;
+            margin: 10px;
+            float: left;
+        }
+        .clear{
+            clear: both;
+        }
+
+        p{
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+
+        <div class="content-1">Content 1</div>
+        <div class="content">Content 1</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dicta! Rerum fuga et atque at explicabo praesentium minima eaque laboriosam assumenda ducimus maxime, ipsum sed quos eius, aut maiores. Exercitationem!</p>
+
+        <div class="content-1">Content 2</div>
+        <div class="content">Content 3</div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dicta! Rerum fuga et atque at explicabo praesentium minima eaque laboriosam assumenda ducimus maxime, ipsum sed quos eius, aut maiores. Exercitationem!</p>
+
+        <div class="clear"></div>
+    </main>
+
+</body>
+</html>
