@@ -17,6 +17,7 @@
             * Centraliza o container horizontalmente */
             margin: 10px auto;
             padding: 10px;
+            position: relative;
         }
 
         h1 {
@@ -27,11 +28,33 @@
             width: 300px;
         }
 
+        .fixed{
+            border: 1px solid red;
+            background: #f2f2f2;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            margin: 0px;
+        }
+
+        .absolute{
+            position: absolute;
+            top: 80px;
+            right: 80px;
+            background: #f2f2f2;
+            border: 1px red solid;
+        }
+
         .relative{
             border: 1px solid red;
             position: relative;
             /* top right bottom e left */
+            /*
             top: 20px;
+            right: 20px;
+            bottom: 20px;
+            left: 20px;
+            */
         }
     </style>
 </head>
@@ -44,7 +67,23 @@
 
         <p class="relative"> P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta, numquam, maxime nulla facere veritatis possimus dolor vitae, adipisci labore blanditiis corporis molestias reiciendis qui minus voluptates? Ex, qui aut?</p>
         
-        <p> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta, numquam, maxime nulla facere veritatis possimus dolor vitae, adipisci labore blanditiis corporis molestias reiciendis qui minus voluptates? Ex, qui aut?</p>
+        <p class="fixed"> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta, numquam, maxime nulla facere veritatis possimus dolor vitae, adipisci labore blanditiis corporis molestias reiciendis qui minus voluptates? Ex, qui aut?</p>
+
+        <p class="relative"> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta, numquam, maxime nulla facere veritatis possimus dolor vitae, adipisci labore blanditiis corporis molestias reiciendis qui minus voluptates? Ex, qui aut?</p>
+
+        <p class="relative"> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta, numquam, maxime nulla facere veritatis possimus dolor vitae, adipisci labore blanditiis corporis molestias reiciendis qui minus voluptates? Ex, qui aut?</p>
+
+        <p class="relative"> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta, numquam, maxime nulla facere veritatis possimus dolor vitae, adipisci labore blanditiis corporis molestias reiciendis qui minus voluptates? Ex, qui aut?</p>
+
+        <p class="relative"> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta, numquam, maxime nulla facere veritatis possimus dolor vitae, adipisci labore blanditiis corporis molestias reiciendis qui minus voluptates? Ex, qui aut?</p>
+
+        <p class="relative"> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta, numquam, maxime nulla facere veritatis possimus dolor vitae, adipisci labore blanditiis corporis molestias reiciendis qui minus voluptates? Ex, qui aut?</p>
+
+        <p class="relative"> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta, numquam, maxime nulla facere veritatis possimus dolor vitae, adipisci labore blanditiis corporis molestias reiciendis qui minus voluptates? Ex, qui aut?</p>
+
+        <p class="relative"> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta, numquam, maxime nulla facere veritatis possimus dolor vitae, adipisci labore blanditiis corporis molestias reiciendis qui minus voluptates? Ex, qui aut?</p>
+
+        <p class="absolute"> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta, numquam, maxime nulla facere veritatis possimus dolor vitae, adipisci labore blanditiis corporis molestias reiciendis qui minus voluptates? Ex, qui aut?</p>
 
     </div>
 
