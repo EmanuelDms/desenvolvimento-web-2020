@@ -1,0 +1,146 @@
+html {
+    background: #fff;
+    color: #000;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+}
+  a:focus {
+    outline: thin dotted;
+}
+  a:hover, a:active {
+    outline: 0;
+}
+
+body{
+    background: black;
+    margin: 0;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#content{
+    margin: 0 auto;
+    width: 1400px;
+    border: 1px solid red;
+
+}
+
+.clear{
+    clear: both;
+}
+
+/* === HEADER === */
+
+header{
+    background: rgb(22, 21, 21);
+    margin: 10px 10px;
+    border-radius: 10px ;
+    position: sticky;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+#logo{
+    float: left;
+    margin: 0;
+}
+
+
+header #first span, header #second span{
+    display: inline-block;
+    background: #555555;
+    padding:  10px 9px 9px 0;
+    color: #888888;
+    font-weight: bold;
+    margin: 0 -15px 0 0;
+}
+
+
+#first{
+    margin: 1em auto;
+}
+
+#second{
+    margin: 1em auto 0 auto;
+}
+
+
+#first a{
+    padding: 14px;
+    font-weight: 400;
+    font-size: 18px; 
+    color: white;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#second a{
+    background: #555555;
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* === MAIN CONTENT === */
+main{
+    margin: 10px;
+}
+
+#noticias{
+    border: 1px solid red;
+
+}
+
+/* == noticias == */
+
+#noticia_1{
+    float: left;
+    top: 0px;
+}
+
+
+#subdiv{
+    float: right;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+#noticia_2{
+    border: 1px solid red;
+    float: left
+}
+
+
+#noticia_1 img{
+    width: 674.5px;
+    border: 1px solid red;
+
+}
+#noticia_2 img{
+    width: 329.75px;
+    border: 1px solid red;
+}
+#noticia_1 img{
+    border: 1px solid red;
+    width: 674.5px;
+}
