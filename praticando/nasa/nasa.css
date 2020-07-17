@@ -6,6 +6,13 @@ textarea {
   font-family: sans-serif;
 }
 
+body{
+    background: black;
+    margin: 0;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 img {
     border: 0;
 }
@@ -21,17 +28,10 @@ a {
     outline: 0;
 }
 
-body{
-    background: black;
-    margin: 0;
-    color: white;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
 #content{
     margin: 0 auto;
     width: 1400px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 
@@ -50,23 +50,19 @@ header{
     text-align: center;
 }
 
-
-
 #logo{
     float: left;
     margin: 0;
 }
 
-
 header #first span, header #second span{
     display: inline-block;
     background: #555555;
-    padding:  10px 9px 9px 0;
+    padding: 0.5em 9px 0.5em 0;
     color: #888888;
     font-weight: bold;
     margin: 0 -15px 0 0;
 }
-
 
 #first{
     margin: 1em auto;
@@ -75,7 +71,6 @@ header #first span, header #second span{
 #second{
     margin: 1em auto 0 auto;
 }
-
 
 #first a{
     padding: 14px;
@@ -93,74 +88,80 @@ header #first span, header #second span{
     font-size: 14px;
     padding: 10px;
 }
-
+/* === END OF HEADER === */
 /* === MAIN CONTENT === */
 main{
-    margin: 10px;
+    margin: 0 5em;
 }
 
 /* == noticias == */
 
-#noticias{
+/* #noticias{
     border: 5px solid olive;
-    margin: 10px;
-    padding: 10px;
-    width: 80em;
-}
+} */
 
 
 #noticia_1{
-    border: 5px solid red;
-    margin: 7px;
-    padding: 5px;
+    margin: 1em;
     float: left; 
-    width: 474.5px;
-    height: 509px;
 }
 
 #noticia_1 img{
-    width: 474.5px;
-    height: 509px;
+    width: 480.5px;
+    height: 559px;
 }
 
 #bloco_div{
-    border: 5px solid greenyellow;
-    background: grey;
-    width: 45em;
     color: black;
+    width: 45em;
+    margin: 18px 0px 15px 0px;
+    padding: 0;
     float: left;
-    margin: 7px;
-    padding: 5px;
 }
 
 #noticia_2{
-    border: 5px solid magenta;
-    margin: 7px;
+    margin: 0 0 0 7px;
     float: left;
 }
 
 #noticia_2 img{
     width: 329.75px;
-    height: 229.75px;
+    height: 300.75px;
 }
 
 #link-noticias{
-    border: 5px solid springgreen;
+    background: #39719e;
     text-align: justify;
-    background: white;
     width: 20em;
-    padding: 5px;
-    margin: 7px;
+    height: 17.5em;
+    padding: 10px;
+    margin: 0 0 20px 17px;
     float: left;
 }
 
+#link-noticias a{
+    color: white;
+    text-align: justify;
+    font-size: 10pt;
+    display: block;
+}
+#link-noticias h4{
+    color: white;
+    text-align: justify;
+    font-size: 10pt;
+    display: inline;
+}
+
 #noticia_3{
-    border: 5px solid orange;
+    display: inline-block;
     clear: left;
     margin: 7px;
 }
 
 #noticia_3 img{
     height: 230px;
-    width: 695.5px;
+    width: /*695.5px*/ 43em;
 }
+
+/* === END OF NOTICIAS === */
+/* === END OF MAIN === */
