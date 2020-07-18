@@ -2,13 +2,15 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <title>TecBlog</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>TecBlog - O seu Blog de tecnologia</title>
 </head>
 <body>
 
     <header>
+
         <h1>Tec<span>Blog</span></h1>
+
         <nav>
             <a href="./index.html">Home</a>
             <a href="./jogos.html">Jogos</a>
@@ -16,60 +18,85 @@
             <a href="./informatica.html">Informática</a>
             <a href="./eletronicos.html">Eletrônicos</a>
         </nav>
+
     </header>
 
     <main>
-
         <!-- Bloco de Noticia -->
         <article>
-
             <!-- Noticia #1 -->
             <section>
+                
                 <h2>Titulo da Postagem 1</h2>
-                <p>postado em 20 março 2022</p>
+                <span>postado em 20 março 2022</span>
                 <img src="./imgs/imagem2.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui odit delectus aliquam? Laborum distinctio velit ipsa, recusandae, voluptatibus itaque natus sunt maxime fugit beatae nam numquam. Laudantium, repudiandae qui!</p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui odit delectus aliquam? Laborum distinctio velit ipsa, recusandae, voluptatibus itaque natus sunt maxime fugit beatae nam numquam. Laudantium, repudiandae qui!
+                </p>
                 <a href="#">Leia Mais</a>
+
             </section>
+            <!--// Notícia #1 -->
+            
+            <!-- Noticia #2 -->
             <section>
+                
                 <h2>Titulo da Postagem 2</h2>
-                <p>postado em 20 março 2022</p>
+                <span>postado em 10 março 2022</span>
                 <img src="./imgs/imagem2.jpg">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui odit delectus aliquam? Laborum distinctio velit ipsa, recusandae, voluptatibus itaque natus sunt maxime fugit beatae nam numquam. Laudantium, repudiandae qui!</p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse qui odit delectus aliquam? Laborum distinctio velit ipsa, recusandae, voluptatibus itaque natus sunt maxime fugit beatae nam numquam. Laudantium, repudiandae qui!
+                </p>
                 <a href="#">Leia Mais</a>
+                
             </section>
+            <!--// Notícia #2 -->
+
 
         </article>
+        <!--// Bloco Notícia -->
 
-        <!--  -->
+        <!-- Barra Lateral -->
         <aside>
 
-            <div>
+            <div class="conteudo-lateral">
                 <h3>Postagens Recentes</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, neque inventore vel ea culpa iure necessitatibus iusto minus, quam ullam nostrum voluptas est repellat molestias excepturi, officia beatae aut quos?</p>
-                <a href="#">Leia Mais</a>
-                <hr>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet totam aspernatur tenetur veritatis, illo, itaque commodi iusto corrupti quasi maiores numquam molestiae quaerat officiis eum. Tempora nulla iste labore enim!</p>
-                <a href="#">Leia Mais</a>
+                    <div class="texto-lateral">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p> 
+                    <hr>
+                </div>
+                <a href="#">Leia mais</a>
             </div>
             
+            <div class="conteudo-lateral">
+                <h3>Categorias</h3>
+                <div class="texto-lateral">
+                    <a href="./index.html">Home</a>
+                    <a href="./jogos.html">Jogos</a>
+                    <a href="./celulares.html">Celulares</a>
+                    <a href="./informatica.html">Informática</a>
+                    <a href="./eletronicos.html">Eletrônicos</a>
+                    <hr>
+                </div>
+                <a href="#">Leia mais</a>
+            </div>
 
             <div>
-                <h3>Categorias</h3>
-                <a href="./index.html">Home</a>
-                <a href="./jogos.html">Jogos</a>
-                <a href="./celulares.html">Celulares</a>
-                <a href="./informatica.html">Informática</a>
-                <a href="./eletronicos.html">Eletrônicos</a>
+                
             </div>
             
 
         </aside>
+        <!--// Barra Lateral -->
 
     </main>
     
     <footer>
-        Todos os direitos reservados.
+        Todos os direitos reservados
     </footer>
 
 </body>

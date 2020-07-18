@@ -1,0 +1,145 @@
+/* Clean default styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 1em;
+    margin: 0;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background: #FFF;
+}
+
+a:link, a:visited{
+    color: #f7b600;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+
+h2{
+    color: #f7b600;
+}
+
+h3{
+    color: #565656;
+    background: #ffbb00;
+    padding: 5px;
+}
+
+/* --> Layout <-- */
+
+/* === HEADER === */
+header{
+    background: #f7b600;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+header h1 span{
+    color: white;
+}
+
+header h1, nav{
+    padding: 10px;
+}
+
+/* == Navbar == */
+
+a{
+    text-decoration: none;
+}
+
+header nav a:link, header nav a:visited{
+    color: #FFF;
+    padding: 8px 12px;
+}
+
+header nav a:hover{
+    color: #f7b600;
+    background: #FFF;
+    text-decoration: none;
+}
+
+/* // Navbar */
+/* // Header */
+
+/* == Main Content == */
+main{
+    background: white;
+    /* Esse tamanho de width se adapta bem aos diferentes tipos de dispostivos */
+    width: 920px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+/* Bloco de Notícia */
+article{
+    width: 660px;
+    float: left;
+    border: 1px solid blue;
+}
+
+/* Notícias */
+section{
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #FFF;
+}
+
+section img{
+    width: 620px;
+}
+
+section span{
+    font-size: 0.8em;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+/* // Notícias */
+/* // Bloco de Notícia */
+
+/* Área Lateral de Links */
+aside{
+    float: right;
+    border: 1px solid red;
+    width: 240px;
+}
+
+aside .conteudo-lateral{
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+aside .texto-lateral{
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+/* aside .texto-lateral hr{
+} */
+
+/* // Área Lateral de Links */
+/* // Main Content */
+
+
+/* footer */
+footer{
+    background: #CCC;
+    text-align: center;
+    clear: both;
+    padding: 15px;
+}
+/* // footer */
