@@ -86,7 +86,6 @@ main{
 article{
     width: 660px;
     float: left;
-    border: 1px solid blue;
 }
 
 /* Notícias */
@@ -113,7 +112,6 @@ section span{
 /* Área Lateral de Links */
 aside{
     float: right;
-    border: 1px solid red;
     width: 240px;
 }
 
@@ -126,10 +124,12 @@ aside .conteudo-lateral{
 aside .texto-lateral{
     font-size: 0.8em;
     padding: 5px;
+    /* border-bottom: 1px dotted #CCC; */
 }
 
-/* aside .texto-lateral hr{
-} */
+#links-list{
+    list-style-type: none;
+}
 
 /* // Área Lateral de Links */
 /* // Main Content */
