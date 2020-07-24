@@ -6,3 +6,6 @@ Repositório destinado ao curso de "Desenvolvimento Web 2020" da Udemy e outros 
 
 #### 1. Startar um arquivo com URL reduzida utilizando php
 - php -S localhost:8000 -t `<nome da pasta>`
+
+#### 2. Limpar o registro de requisições do cache do browser (Chrome):
+- Ctrl + F5
