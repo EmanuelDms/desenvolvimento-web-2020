@@ -20,12 +20,12 @@
 
 <script>
 
-$(document).ready(function () {
+$(document).ready(() => {
 
-	$('#cachorro').on('click', function() {
+	$('#cachorro').on('click', () => {
 		
 		$.ajax({
-		url: 'cachorro.php',
+		url: './moi_ajax/cachorro.php',
 		dataType: 'JSON',
 		success: function (dados) {
 			$('#box').html(dados.animal)
@@ -37,10 +37,10 @@ $(document).ready(function () {
 	
 	})
 	
-	$('#gato').on('click', function() {
+	$('#gato').on('click', () => {
 		
 		$.ajax({
-		url: 'gato.php',
+		url: './moi_ajax/gato.php',
 		dataType: 'JSON',
 		success: function (dados) {
 			$('#box').html(dados.animal)
