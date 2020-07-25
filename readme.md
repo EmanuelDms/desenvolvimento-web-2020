@@ -9,3 +9,7 @@ Repositório destinado ao curso de "Desenvolvimento Web 2020" da Udemy e outros 
 
 #### 2. Limpar o registro de requisições do cache do browser (Chrome):
 - Ctrl + F5
+
+## Links Importantes!
+
+#### 1. [GitFlow - WorkFlow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow)
