@@ -37,13 +37,14 @@ $(document).ready(() => {
         $.ajax({
             type: 'GET',
             url: 'app.php',
-            data: `competencia=${competencia}`, //x-www-form-urlencoded]
+            data: `competencia=${competencia}`, //x-www-form-urlencoded
             dataType: 'json',
             success: data => { 
                 $('#num_vendas').html(data.numeroVendas)
                 $('#total_vendas').html('R$ '+(data.totalVendas).replace('.', ','))
                 $('#clientes_ativos').html(data.clientesAtivos)
                 $('#clientes_inativos').html(data.clientesInativos)
+                $('#total_despesas').html('R$ '+(data.totalDespesas).replace('.', ','))
             },
             error: error => { console.log(error) }
         })

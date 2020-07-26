@@ -1,13 +1,4 @@
 <?php
-
-// $nome = 'Moisés';
-
-// $x = new Dashboard();
-
-// $x->__set('Nome', $nome);
-
-// echo $x->__get('Nome');
-
 // classe dashboard => define a competência da dashboard
 class Dashboard{
 	public $data_inicio;
@@ -16,6 +7,7 @@ class Dashboard{
 	public $clientesInativos;
 	public $numeroVendas;
 	public $totalVendas;
+	public $totalDespesas;
 
 	public function __get($atributo){
 		return $this->$atributo;
@@ -111,8 +103,7 @@ class Bd {
 			FROM 
 				tb_clientes 
 			WHERE 
-				cliente_ativo = 1;
-		";
+				cliente_ativo = 1;";
 
 		// statement
 		$stmt = $this->conexao->prepare($query);
@@ -129,14 +120,32 @@ class Bd {
 			FROM
 				tb_clientes
 			WHERE
-				cliente_ativo = 0;
-		";
+				cliente_ativo = 0;";
 
 		// statement
 		$stmt = $this->conexao->prepare($query);
 		$stmt->execute();
 
 		return $stmt->fetch(PDO::FETCH_OBJ)->qtd_clientes_inativos;
+	}
+
+	public function getTotalDespesas(){
+		$query = "
+			SELECT
+				SUM(total) as totalDespesas
+			FROM
+				tb_despesas
+			WHERE
+				data_despesa between :data_inicio and :data_fim;";
+
+			// statement
+			$stmt = $this->conexao->prepare($query);
+			$stmt->bindValue(':data_inicio', $this->dashboard->__get('data_inicio'));
+			$stmt->bindValue(':data_fim', $this->dashboard->__get('data_fim'));
+			$stmt->execute();
+
+			return $stmt->fetch(PDO::FETCH_OBJ)->totalDespesas;
+
 	}
 }
 
@@ -161,6 +170,7 @@ $dashboard->__set('numeroVendas', $bd->getNumeroVendas());
 $dashboard->__set('totalVendas', $bd->getTotalVendas());
 $dashboard->__set('clientesAtivos', $bd->getClientesAtivos());
 $dashboard->__set('clientesInativos', $bd->getClientesInativos());
+$dashboard->__set('totalDespesas', $bd->getTotalDespesas());
 
 echo json_encode($dashboard);
 ?>
