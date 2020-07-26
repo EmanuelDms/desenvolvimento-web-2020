@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#login-alert{
+    display: none;
+}
+ 
+.margin-top-pq{
+    margin-top: 10px;
+}
+ 
+.margin-top-md{
+    margin-top: 25px;
+    }
+
+.margin-bottom-md{
+    margin-bottom: 25px;
+}
+ 
+.padding-top-md{
+    padding-top: 30px;
+}
