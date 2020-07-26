@@ -14,6 +14,8 @@ Repositório destinado ao curso de "Desenvolvimento Web 2020" da Udemy e outros 
 
 #### 1. [GitFlow - WorkFlow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow)
 
+#### 2. [Sistema de Login com Ajax e PHP](http://www.devwilliam.com.br/php/sistema-de-login-com-ajax-e-php)
+
 ## Termos Importantes!
 - POPULAR (POPULADOS...): termo correto de dizer que determinado(s) campo(s) serão preenchido(s) com valor(es) advindos de uma base de dados;
 - 'Engessado': termo usado para se referir há um valor base para testar instruções
