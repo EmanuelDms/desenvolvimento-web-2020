@@ -1,5 +1,13 @@
 <?php
 
+// $nome = 'Moisés';
+
+// $x = new Dashboard();
+
+// $x->__set('Nome', $nome);
+
+// echo $x->__get('Nome');
+
 // classe dashboard => define a competência da dashboard
 class Dashboard{
 	public $data_inicio;
@@ -46,8 +54,7 @@ class Conexao{
 }
 
 
-// classe que permite manipular o objeto no banco
-// classe (model)
+// classe(model) que permite manipular o objeto no banco
 class Bd {
 	private $conexao;
 	private $dashboard;
@@ -101,14 +108,19 @@ $dashboard = new Dashboard();
 
 $conexao = new Conexao();
 
-$dashboard->__set('data_inicio', '2018-10-01');
-$dashboard->__set('data_fim', '2018-10-31');
+$data = explode('-', $_GET['competencia']);
+$ano = $data[0];
+$mes = $data[1];
+
+$dias_do_mes = cal_days_in_month(CAL_GREGORIAN, $mes, $ano);
+
+$dashboard->__set('data_inicio', $ano."-".$mes."-01");
+$dashboard->__set('data_fim', $ano."-".$mes."-".$dias_do_mes);
 
 $bd = new Bd($conexao, $dashboard);
 
 $dashboard->__set('numeroVendas', $bd->getNumeroVendas());
 $dashboard->__set('totalVendas', $bd->getTotalVendas());
 
-print_r($dashboard);
-
+echo json_encode($dashboard);
 ?>

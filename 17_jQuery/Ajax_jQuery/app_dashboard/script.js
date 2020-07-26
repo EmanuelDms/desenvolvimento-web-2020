@@ -28,4 +28,22 @@ $(document).ready(() => {
             $('#pagina').html(data)
         })
     })
+
+    // ajax
+    $('#competencia').on('change', e => {
+        let competencia = $(e.target).val();
+
+        // metódo, url, dados, sucesso, erro
+        $.ajax({
+            type: 'GET',
+            url: 'app.php',
+            data: `competencia=${competencia}`, //x-www-form-urlencoded]
+            dataType: 'json',
+            success: data => { 
+                $('#num_vendas').html(data.numeroVendas)
+                $('#total_vendas').html('R$ '+(data.totalVendas).replace('.', ','))
+            },
+            error: error => { console.log(error) }
+        })
+    }) 
 })
