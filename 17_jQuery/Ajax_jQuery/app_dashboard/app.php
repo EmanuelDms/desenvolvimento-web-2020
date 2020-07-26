@@ -12,6 +12,8 @@
 class Dashboard{
 	public $data_inicio;
 	public $data_fim;
+	public $clientesAtivos;
+	public $clientesInativos;
 	public $numeroVendas;
 	public $totalVendas;
 
@@ -100,6 +102,42 @@ class Bd {
 
 		return $stmt->fetch(PDO::FETCH_OBJ)->total_vendas;
 	}
+
+	public function getClientesAtivos() {
+		// Considerando que a data não tem relação com o número de clientes ativos
+		$query = "
+			SELECT 
+				count(id) as qtd_clientes_ativos
+			FROM 
+				tb_clientes 
+			WHERE 
+				cliente_ativo = 1;
+		";
+
+		// statement
+		$stmt = $this->conexao->prepare($query);
+		$stmt->execute();
+
+		return $stmt->fetch(PDO::FETCH_OBJ)->qtd_clientes_ativos;
+	}
+
+	public function getClientesInativos() {
+		// Considerando que a data não tem relação com o número de clientes ativo
+		$query = "
+			SELECT 
+				count(id) as qtd_clientes_inativos
+			FROM
+				tb_clientes
+			WHERE
+				cliente_ativo = 0;
+		";
+
+		// statement
+		$stmt = $this->conexao->prepare($query);
+		$stmt->execute();
+
+		return $stmt->fetch(PDO::FETCH_OBJ)->qtd_clientes_inativos;
+	}
 }
 
 // Lógica do Script
@@ -121,6 +159,8 @@ $bd = new Bd($conexao, $dashboard);
 
 $dashboard->__set('numeroVendas', $bd->getNumeroVendas());
 $dashboard->__set('totalVendas', $bd->getTotalVendas());
+$dashboard->__set('clientesAtivos', $bd->getClientesAtivos());
+$dashboard->__set('clientesInativos', $bd->getClientesInativos());
 
 echo json_encode($dashboard);
 ?>

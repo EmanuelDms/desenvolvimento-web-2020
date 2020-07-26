@@ -42,6 +42,8 @@ $(document).ready(() => {
             success: data => { 
                 $('#num_vendas').html(data.numeroVendas)
                 $('#total_vendas').html('R$ '+(data.totalVendas).replace('.', ','))
+                $('#clientes_ativos').html(data.clientesAtivos)
+                $('#clientes_inativos').html(data.clientesInativos)
             },
             error: error => { console.log(error) }
         })
