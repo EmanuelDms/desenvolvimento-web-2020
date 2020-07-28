@@ -1,0 +1,74 @@
+*{
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: black;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.clear{
+  clear: both;
+}
+
+/* == HEADER == */
+header{
+  text-align: center;
+  background: rgb(37, 37, 37) url('../assets/img/bgcolor.jpg') no-repeat;
+  height: 124px;
+  width: 1366px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: 6px solid red;
+}
+
+#logo{
+  float: left;
+  position: relative;
+  top: 15px;
+  left: 15px;
+}
+  /* == NAVBAR == */
+  nav #links{
+    border: 4px solid pink;
+    margin: 0 auto;
+  }
+
+  nav #navOne{
+    border: 4px solid blue;
+  }
+
+  nav #navOne a{
+    font-size: 21px;
+    padding: 20px 15px;
+  }
+
+  nav #navOne a:hover{
+    background: #0b3d91;
+  }
+
+  nav #navTwo{
+    margin-top: 1em;
+    border: 2px solid lawngreen;
+  }
+
+  nav #navTwo a{
+    font-size: 14px;
+    background: #555555;
+    padding: 0 15px;
+  }
+  
+
+  nav #navTwo a:hover{
+    background: #858585;
+  }
+  /* //= NAVBAR == */
+
+/* //== //HEADER == */

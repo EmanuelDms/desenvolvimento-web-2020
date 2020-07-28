@@ -5,7 +5,7 @@ $(document).ready(()=>{
 
 
     buttonLink.on('click', ()=>{
-        $.post('./moi_ajax/index.html', data => {
+        $.post('./ajax-examples/index.html', data => {
             $('#external_page').html(data)
         });
     });
