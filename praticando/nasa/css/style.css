@@ -22,7 +22,7 @@ header{
   text-align: center;
   background: rgb(37, 37, 37) url('../assets/img/bgcolor.jpg') no-repeat;
   height: 124px;
-  width: 1366px;
+  width: 1360px;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -36,33 +36,38 @@ header{
   left: 15px;
 }
   /* == NAVBAR == */
+  nav{
+    /* border: 1px solid red; */
+  }
   nav #links{
     height: 7.5em;
-    /* border: 2px solid pink; */
+    padding: 10px;
+    /* border: 1px solid pink; */
   }
 
   nav #navOne{
-    margin: 10px auto;
     /* border: 1px solid blue; */
   }
 
   nav #navOne a{
     font-size: 21px;
-    margin: 0 -4px 0 -6px;
+    margin: 0 -2px;
     padding: 10px 15px;
   }
 
   nav #navOne a:hover{
+    padding-bottom: 27.5px;
     background: #0b3d91;
   }
 
   nav #navOne hr{
     display: inline;
+    background: #555555c9;
     border: 1px solid #555555c9;
   }
 
   nav #navTwo{
-    margin-top: 2em;
+    margin-top: 2.25em;
     /* border: 2px solid lawngreen; */
   }
 
@@ -75,7 +80,8 @@ header{
   }
 
   nav #navTwo hr{
-    border: 1px solid #c9c9c9ec;
+    background: #8a8a8a;
+    border: 1.5px solid #8a8a8a;
     display: inline;
   }
   
