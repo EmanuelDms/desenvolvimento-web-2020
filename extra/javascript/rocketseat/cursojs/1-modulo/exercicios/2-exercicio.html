@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Módulo 1: Exercício 2</title>
+</head>
+<body>
+    <script>
+
+    exibirPares = (init, end) => {
+        // organize in an ascendant sequence
+        if (init > end){
+            let aux = init;
+            init = end
+            end = aux;
+        }
+
+        // print even numbers
+        for (let i = init; i <= end; i++){
+            if (i % 2 === 0 ) console.log(i)
+        }
+    }
+
+    // executing script
+    exibirPares(2,100);
+    </script>
+</body>
+</html>

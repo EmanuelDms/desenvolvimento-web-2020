@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 1: Exercício 4</title>
+</head>
+<body>
+  <script>
+    experiencia = (anos) =>{
+        if (anos >= 0 && anos <= 1){ result = 'Iniciante'; }
+        else if (anos > 1 && anos <= 3) { result = 'Intermediário';}
+        else if (anos > 3 && anos < 7) { result = 'Avançado';}
+        else if (anos >= 7) { result = 'Jedi Master';}
+        else{ result = 'Inválido!'}
+        return console.log(result);
+    }
+
+    experiencia(7);
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de JavaScript: Estruturas de Repetição</title>
+</head>
+<body>
+    <script>
+        let pessoaObj = {
+            nome: 'Emanuel',
+            idade: '17',
+            carreira: 'Web Developer',
+        }
+        // (1)for, (2)for in, (3)forEach[apenas para arrays], (4)while, (5)do while
+        
+        // ####### For #######
+        for (let i = 1; i <= 100; i++){
+            // console.log(i)
+        }
+
+        // ####### For In #######
+        for (const property in pessoaObj) {
+            console.log(property,pessoaObj[property])
+        }
+
+        // ####### ForEach #######
+        array = ['Maçã', 'Uva', 'Laranja']
+        array.forEach(element => {
+            console.log(element)
+        });
+
+        // ####### While #######
+        let j = 212435348, aux = 0;
+        while (j > 50){
+            // console.log(j);
+            aux += 1;
+            j /= 5;
+        }
+        console.log("iterations:",aux)
+
+        // ####### Do While #######
+        do {
+            console.log('=> Estou a '+aux+' para acabar!')
+            aux--
+        } while (aux <= 10 && aux >= 0);
+    </script>
+</body>
+</html>

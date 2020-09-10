@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de JavaScript: Condicionais</title>
+</head>
+<body>
+    <script>
+        retornaSexo = (sexo) => {
+        //    M e F (In that case, it's better use the switch)
+            switch (sexo){
+                case 'M':
+                    return "Masculino";
+                case 'F':
+                    return "Feminino";
+                default:
+                    return "Inválido";
+            }
+        }
+        console.log(retornaSexo('F'))
+    </script>
+
+</body>
+</html>

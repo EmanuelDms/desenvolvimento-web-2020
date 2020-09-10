@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Módulo 1: Exercício 1</title>
+</head>
+<body>
+    <script>
+        let endereco = {
+            rua: 'Rua dos pinheiros',
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+        fullAddress = (obj) => {
+            return console.log('O usuário mora em '+ obj.cidade +' / '+ obj.uf +
+                ', no bairro ' + obj.bairro +
+                ', na '+ obj.rua +
+                ' com nº '+ obj.numero + '.');
+        }
+
+        fullAddress(endereco)
+
+    </script>
+</body>
+</html>

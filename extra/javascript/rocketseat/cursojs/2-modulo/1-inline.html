@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manipulando a DOM: Eventos Inline</title>
+</head>
+<body>
+  <div id="App">
+    <!-- onmouseover (quando mouse passar por cima) -->
+    <!-- onclick (quando mouse clicar no elemento) -->
+    <!-- onkeyup(quando soltarmos uma tecla) -->
+    <!-- onkeydown(quando clicamos em uma tecla) -->
+    <!-- onkeypress(quando clicamos e soltamos uma tecla) -->
+    <pre>Key Up Event</pre>
+    <input onkeyup="exibeBeatles();" placeholder="The long and winding road..." />
+    <pre>Key Down Event</pre>
+    <input onkeydown="exibeDire();" placeholder="Once Upon a Time in the West..." />
+    <pre>Key Press Event</pre>
+    <input onkeypress="exibeBruno();" placeholder="Oh oh aaaaa..." />
+    <pre>On Click Event</pre>
+    <input type="radio" onclick="exibeRadio();" name="ok" placeholder="ENOUGH!..." />
+    <pre>On mouse Over Event</pre>
+    <button onmouseover="exibeAlerta();">Me pressione</button>
+  </div>
+  <script>
+    exibeBeatles = () => { alert("The Beatles?!"); }
+    exibeDire = () => { alert("Dire straits?!"); }
+    exibeRadio = () => { alert("Radio foi clicado!"); }
+    exibeBruno = () => { alert("Bruno Mars?!"); }
+    exibeAlerta = () => { alert("Botão foi clicado!"); }
+  </script>
+</body>
+</html>

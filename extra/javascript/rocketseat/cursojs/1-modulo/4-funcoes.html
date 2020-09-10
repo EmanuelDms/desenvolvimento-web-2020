@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de JavaScript: Funções</title>
+</head>
+<body>
+    <script>
+      function soma(num1, num2) {
+        // Essa variável só irá existir dentro do escopo da função
+        let result = num1 + num2;
+        return result;
+      }
+
+      // Using arrow function
+
+      subtracao = (num1, num2) => num1 - num2
+
+      function mult(num1, num2) {
+          return num1 * num2;
+      }
+
+      function divisao(num1, num2) {
+          return num1 / num2;
+      }
+
+      function resto(num1, num2) {
+          return num1 % num2;
+      }
+
+      // Lógica do script
+      var x = 2, y = 2;
+
+      var c = {
+        soma: soma(x,y),
+        subtracao: subtracao(x,y),
+        mult: mult(x,y),
+        divisao: divisao(x,y),
+        resto: resto(x,y)
+      }
+
+      console.log('Soma: ', c.soma, '\nSubtração: ', c.subtracao, '\nMultiplicação: ', c.mult, '\nDivisão: ', c.divisao, '\nResto da Divisão: ', c.resto)
+    </script>
+</body>
+</html>

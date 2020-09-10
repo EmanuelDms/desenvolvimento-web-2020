@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Manipulando a DOM: Trabalhando com a DOM</title>
+</head>
+<body>
+  <div id="app">
+    <!-- document.getElementsByClassName('input') -->
+    <input type="text" id="nome" placeholder="Nome">
+    <!-- document.getElementById('nome1') -->
+    <input type="text" id="nome1" placeholder="Nome 1">
+    <!-- document.getElementsByTagName('input')[2] -->
+    <input type="text" placeholder="Nome 2">
+    <!-- QuerySelector -->
+    <input type="text" name="nome3" class="nome3" placeholder="Nome 3">
+
+    <input type="text" id="oi" placeholder="Olá Mundo">
+
+    <button class="botao">Adicionar</button>
+  </div>
+  <script>
+    // querySelector permite navegar pela DOM do HTML
+    var inputElementSelectorAll = document.querySelectorAll('input');
+    var inputElementSelector = document.querySelector('input#oi');
+
+    // Captura pelo ID do elemento
+    var inputElement = document.getElementById('nome1');
+
+    // Sempre retorna vetor
+    var inputElementTagName = document.getElementsByTagName('input')[2];
+
+    // Sempre retorna vetor
+    var inputElementClassName = document.getElementsByClassName('nome3')[0];
+
+    // Capturando Botão
+    var btnElement = document.querySelector('button.botao');
+      // onclick com texto do input
+      var text = inputElementSelector/*.value*/;
+      btnElement.onclick = () => { alert('Botão Clicado => '+text.value) }
+
+    console.log(inputElementSelectorAll);
+    console.log(inputElement);
+    console.log(inputElementTagName);
+    console.log(inputElementClassName);
+    console.log(btnElement);
+  </script>
+</body>
+</html>
