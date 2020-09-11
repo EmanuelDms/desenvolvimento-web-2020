@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Módulo 2: Exercício 3 e 4</title>
+</head>
+
+<body>
+
+  <input type="text" name="nome" placeholder="Insira um nome...">
+  <button id="addLi">Adicionar</button>
+
+  <!-- 3º Preencha uma lista (<ul>) no HTML com o vetor nome -->
+  <!-- 4º Através do input e button, inserir um novo item na lista e, por consequência, ser exibido na lista não-ordenada. Apagar também o conteúdo do input após a inserção. -->
+  <script>
+    var nome = ["Diego", "Gabriel", "Lucas"];
+    var body = document.querySelector('body');
+    var btn = document.querySelector('#addLi');
+    var ul = document.createElement('ul');
+    body.appendChild(ul);
+
+    window.onload = () => {
+      nome.forEach(element => {
+        let text = document.createTextNode(element);
+        let li = document.createElement('li');
+        li.appendChild(text);
+        ul.appendChild(li);
+      });
+    };
+
+    function addLiOnUl(nome, ul) {
+      // let i = nome.value - ;
+      let LiS = document.querySelectorAll('ul li');
+      console.log(LiS.length);
+
+    }
+
+    btn.onclick = () => {
+      var inputNome = document.querySelector('input[name="nome"]');
+      nome.push(inputNome.value);
+      inputNome.value = '';
+      addLiOnUl(nome, ul);
+    }
+
+  </script>
+</body>
+
+</html>
