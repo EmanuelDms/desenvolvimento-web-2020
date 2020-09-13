@@ -5,6 +5,12 @@
   <meta charset="UTF-8">
   <title>Módulo 2: Exercício 3 e 4</title>
 </head>
+<style>
+  body {
+    background: black;
+    color: white;
+  }
+</style>
 
 <body>
 
@@ -21,26 +27,38 @@
     body.appendChild(ul);
 
     window.onload = () => {
-      nome.forEach(element => {
-        let text = document.createTextNode(element);
-        let li = document.createElement('li');
-        li.appendChild(text);
-        ul.appendChild(li);
-      });
+      addLiOnUl();
     };
 
-    function addLiOnUl(nome, ul) {
-      // let i = nome.value - ;
+    function addLiOnUl() {
       let LiS = document.querySelectorAll('ul li');
-      console.log(LiS.length);
+      let LiS_Size = LiS.length;
+      let nomeSize = nome.length - 1;
 
+      // Se o array for maior que aos existem em tela, 
+      let result = nomeSize < LiS_Size;
+
+      // Faz essa verificação para rodar o array inicialmente
+      if (LiS_Size <= 2) {
+        var i = 0;
+        while (i < nomeSize) {
+          var li = document.createElement('li');
+          var text = document.createTextNode(nome[i]);
+          i++;
+        }
+      } else {
+        var li = document.createElement('li');
+        var text = document.createTextNode(nome[nomeSize]);
+      }
+      li.appendChild(text);
+      ul.appendChild(li);
     }
 
     btn.onclick = () => {
       var inputNome = document.querySelector('input[name="nome"]');
       nome.push(inputNome.value);
       inputNome.value = '';
-      addLiOnUl(nome, ul);
+      addLiOnUl();
     }
 
   </script>
