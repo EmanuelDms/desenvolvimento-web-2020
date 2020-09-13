@@ -5,15 +5,8 @@
   <meta charset="UTF-8">
   <title>Módulo 2: Exercício 3 e 4</title>
 </head>
-<style>
-  body {
-    background: black;
-    color: white;
-  }
-</style>
 
 <body>
-
   <input type="text" name="nome" placeholder="Insira um nome...">
   <button id="addLi">Adicionar</button>
 
@@ -39,19 +32,22 @@
       let result = nomeSize < LiS_Size;
 
       // Faz essa verificação para rodar o array inicialmente
-      if (LiS_Size <= 2) {
+      if (LiS_Size == 0) {
         var i = 0;
-        while (i < nomeSize) {
+        while (i <= nomeSize) {
           var li = document.createElement('li');
           var text = document.createTextNode(nome[i]);
+          li.appendChild(text);
+          ul.appendChild(li);
           i++;
         }
       } else {
         var li = document.createElement('li');
+        console.log('escabei')
         var text = document.createTextNode(nome[nomeSize]);
+        li.appendChild(text);
+        ul.appendChild(li);
       }
-      li.appendChild(text);
-      ul.appendChild(li);
     }
 
     btn.onclick = () => {
@@ -59,6 +55,7 @@
       nome.push(inputNome.value);
       inputNome.value = '';
       addLiOnUl();
+
     }
 
   </script>
