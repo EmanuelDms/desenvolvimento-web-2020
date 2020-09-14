@@ -19,9 +19,11 @@ function renderToDos() {
     var pos = todos.indexOf(todo);
     linkElement.setAttribute('onclick', 'deleteToDo(' + pos + ')');
 
-    var linkText = document.createTextNode('Excluir');
+    var linkImage = document.createElement('img');
+    linkImage.setAttribute('src', './criss-cross.svg');
+    linkImage.setAttribute('class', 'deleteToDo');
 
-    linkElement.appendChild(linkText);
+    linkElement.appendChild(linkImage);
 
     todoElement.appendChild(todoText);
     todoElement.appendChild(linkElement);
