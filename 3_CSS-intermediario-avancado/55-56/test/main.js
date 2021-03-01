@@ -1,21 +1,17 @@
 function getCurrentPage() {
   // captura url
-  let path = window.location.pathname;
-  let arrayUrlSplit = path.split('/');
+  const path = window.location.pathname;
+  const splitedUrl = path.split('/');
   // captura o nome do arquivo + extensão
-  let fileName = arrayUrlSplit[arrayUrlSplit.length - 1];
+  let fileName = splitedUrl[splitedUrl.length - 1];
   // elimina extensão do arquivo
   fileName = (fileName.split('.html'))[0];
-
-  if (fileName === 'index') fileName = 'home';
-
-  return fileName;
+  return (fileName === 'index') ? 'home' : fileName;
 }
 
-function setStyleToCurrentPage(fileName) {
-  console.log(fileName);
-  let element = document.getElementById(fileName);
+function setStyleToCurrentPage() {
+  const element = document.getElementById(getCurrentPage());
   return element.setAttribute('class', 'selected');
 }
 
-setStyleToCurrentPage(getCurrentPage());
+setStyleToCurrentPage();
