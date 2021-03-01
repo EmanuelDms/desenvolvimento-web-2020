@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 10px;
+}
+
+h1{
+  margin-bottom: 10px;
+}
+
+#content{
+  background: #F7B600;
+  width: 200px;
+}
+
+#content > details > summary{
+  padding: 12px;
+  cursor: pointer;
+}
+
+#content > details > summary::marker{
+ color: white;
+}
+
+#content > details > summary:hover{
+  background: #F99700;
+  color: white;
+}
+
+#content > details > p{
+  padding: 10px;
+}
+
+#activityList {
+  list-style-type: none;
+  background: none;
+}
+
+#activityList > li{
+  /* border: 1px solid red; */
+  padding: 10px 20px;
+  background: url('images/seta.png') no-repeat left center;
+}
+
+#navegationBar {
+  list-style-type: none;
+}
+
+#navegationBar a{
+  display: block;
+  width: 200px;
+  height: 40px;
+
+  color: #000;
+  text-decoration: none;
+  text-indent: 40px;
+  line-height: 40px;
+  /* border: 1px solid red; */
+  background: #F7B600 url('images/menu.png') no-repeat left bottom;
+}
+
+#navegationBar a:hover, .selected{
+  background: #F99700 url('images/menu.png') no-repeat right bottom;
+  color: white;
+}

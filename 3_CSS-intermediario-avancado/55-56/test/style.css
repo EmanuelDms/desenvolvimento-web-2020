@@ -13,7 +13,7 @@ h1{
 }
 
 #content{
-  background: #F8B500;
+  background: #F7B600;
   width: 200px;
 }
 
@@ -27,7 +27,7 @@ h1{
 }
 
 #content > details > summary:hover{
-  background: #FB9300;
+  background: #F99700;
   color: white;
 }
 
@@ -43,7 +43,7 @@ h1{
 #activityList > li{
   /* border: 1px solid red; */
   padding: 10px 20px;
-  background: url('images/seta.png') no-repeat left center;
+  background: url('../images/seta.png') no-repeat left center;
 }
 
 #navegationBar {
@@ -60,10 +60,14 @@ h1{
   text-indent: 40px;
   line-height: 40px;
   /* border: 1px solid red; */
-  background: url('images/menu.png') no-repeat left bottom;
+  background: #F7B600 url('../images/menu.png') no-repeat left bottom;
 }
 
 #navegationBar a:hover{
-  background: url('images/menu.png') no-repeat right bottom;
+  background: #F99700 url('../images/menu.png') no-repeat right bottom;
   color: white;
+}
+
+.selected{
+  display: none;
 }
