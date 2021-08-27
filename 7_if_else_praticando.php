@@ -24,6 +24,11 @@
 <body>
   <div class="rtx"></div>
   <?php
+  function ternaryYesNoTextOutput($condition)
+  {
+    return ($condition) ? 'Sim' : 'Não';
+  }
+
   $usuario_possui_cartao_loja = true;
   $valor_compra = 17750;
 
@@ -38,11 +43,11 @@
 
   <main>
     <h1>Detalhes do pedido</h1>
-    <p><strong>Possui cartão da loja?</strong> <?= ($usuario_possui_cartao_loja) ? 'Sim' : 'Não';  ?></p>
+    <p><strong>Possui cartão da loja?</strong> <?= ternaryYesNoTextOutput($usuario_possui_cartao_loja); ?></p>
 
     <p><strong>Valor da compra:</strong> R$<?= number_format($valor_compra, 2, ',', ''); ?></p>
 
-    <p><strong>Recebeu desconto no frete?</strong> <?= ($recebeu_desconto_frete) ? 'Sim' : 'Não';  ?></p>
+    <p><strong>Recebeu desconto no frete?</strong> <?= ternaryYesNoTextOutput($recebeu_desconto_frete);  ?></p>
   </main>
 
   <div class="rtx"></div>
